@@ -23,6 +23,16 @@ function inisialisasi(){
         $(".main").hide();
         $(".logout").show();
     }
+
+    if(liff.isLoggedIn()){
+        liff.getProfile()
+            .then(profile => {
+                $('#customer').text(profile.displayName);
+            })
+            .catch((err) => {
+                console.log('error', err);
+            })
+    }
 }
 
 function login(){
