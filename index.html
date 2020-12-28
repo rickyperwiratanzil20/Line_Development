@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="line.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Login</title>
 </head>
 <body>
-    <div class="jumbotron">
+    <div id="login" class="jumbotron">
         <h1>SNACK MANTAP</h1>
         <h5>Eitssss mau beli ? LOGIN dulu baru bisa beli. OKEEEEEE......</h5>
         <button class="btn btn-danger" onclick="login()">LOGIN</button>
@@ -68,8 +70,8 @@
         <hr>
         <div class="footer">
             <h5><b>Ringkasan</b></h5>
-            <h6>Total : 0 Makanan 0 Minuman</h6>
-            <h6>Harga : 0</h6>
+            <h6 id="total">Total : 0 Makanan 0 Minuman</h6>
+            <h6 id="harga">Harga : 0</h6>
             <button class="psn btn btn-success" onclick="pesan()">Pesan Sekarang</button>
         </div>
         <div class="logout">
