@@ -24,3 +24,12 @@ function inisialisasi(){
         $(".logout").show();
     }
 }
+
+function login(){
+    if(liff.isLoggedIn()){
+        liff.login();
+    }
+    else{
+        alert("Tidak Dapat Berakali - kali");
+    }
+}
