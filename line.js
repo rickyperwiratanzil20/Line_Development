@@ -33,3 +33,39 @@ function login(){
         alert("Tidak Dapat Berakali - kali");
     }
 }
+
+function sendMessage(){
+    if(liff.isInClient()){
+        liff.sendMessages([
+            {
+            type:'text',
+            text: "Pesananan yang dipesan adalah : \n"+total_makanan+" Makanan dan "+total_minuman+" Minuman"
+            }
+        ])
+        .then(() => {
+            alert('Selamat anda memesan makanan');
+        })
+        .catch((err) => {
+            console.log('error', err);
+        });
+    }
+    else {
+        alert('Kau gak bisa kirim pesan selain dari LINE, PAHAM !!!');
+    }
+}
+
+function eksternal(){
+    liff.openWindow({
+        url:'https://snackmantap20.herokuapp.com/',
+        external:true
+    });
+}
+
+function logout(){
+    if(liff.isLoggedIn){
+        liff.logout();
+        inisialisasi();
+    }else{
+        alert("Nahhh Loginn lahh");
+    }
+}
