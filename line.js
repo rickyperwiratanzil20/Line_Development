@@ -21,6 +21,7 @@ function inisialisasi(){
     else{
         $("#login").show();
         $(".main").hide();
+        $(".tmbl-eks").hide();
         $(".logout").show();
     }
 
