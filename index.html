@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>SNACK MANTAP</h1>
+        <h5>Eitssss mau beli ? LOGIN dulu baru bisa beli. OKEEEEEE......</h5>
+        <button class="btn btn-danger" onclick="login()">LOGIN</button>
+    </div>
+    <div class="main">
+        <h1>SNACK MANTAP</h1>
+        <h5>Heyyy <b id="customer">Customer</b> yang sudah LOGIN, kalian bisa memesan makanan di bawah ini ya !!!</h5>
+        <h3><b>Makanan Snack</b></h3>
+        <div class="snack1">
+            <div class="mkn-snack1">
+                <h5><b>Tangil</b></h5>
+                <h6>5.000</h6>
+            </div>
+            <div class="qty-mkn-snack1">
+                <button class="krng1 btn btn-secondary" onclick="minus(1)">-</button>
+                <p id="prf1">0</p>
+                <button class="tmbh1 btn btn-success" onclick="plus(1)">+</button>
+            </div>
+        </div>
+        <div class="snack2">
+            <div class="mkn-snack2">
+                <h5><b>Tangul</b></h5>
+                <h6>5.000</h6>
+            </div>
+            <div class="qty-mkn-snack2">
+                <button class="krng2 btn btn-secondary" onclick="minus(2)">-</button>
+                <p id="prf2">0</p>
+                <button class="tmbh2 btn btn-success" onclick="plus(2)">+</button>
+            </div>
+        </div>
+        <h3><b>Minuman Snack</b></h3>
+        <div class="snack3">
+            <div class="min-snack3">
+                <h5><b>Tangil</b></h5>
+                <h6>5.000</h6>
+            </div>
+            <div class="qty-min-snack3">
+                <button class="krng3 btn btn-secondary" onclick="minus(3)">-</button>
+                <p id="prf3">0</p>
+                <button class="tmbh3 btn btn-success" onclick="plus(3)">+</button>
+            </div>
+        </div>
+        <div class="snack4">
+            <div class="min-snack4">
+                <h5><b>Tangul</b></h5>
+                <h6>5.000</h6>
+            </div>
+            <div class="qty-min-snack4">
+                <button class="krng4 btn btn-secondary" onclick="minus(4)">-</button>
+                <p id="prf4">0</p>
+                <button class="tmbh4 btn btn-success" onclick="plus(4)">+</button>
+            </div>
+        </div>
+        <hr>
+        <div class="footer">
+            <h5><b>Ringkasan</b></h5>
+            <h6>Total : 0 Makanan 0 Minuman</h6>
+            <h6>Harga : 0</h6>
+            <button class="psn btn btn-success" onclick="pesan()">Pesan Sekarang</button>
+        </div>
+        <div class="logout">
+            <button class="logout btn btn-secondary" onclick="logout()">LOGOUT</button>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,37 @@
+.snack1, .snack2, .snack3, .snack4{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.qty-mkn-snack1, .qty-mkn-snack2, .qty-min-snack3, .qty-min-snack4{
+    display: flex;
+    flex-direction: row;
+}
+
+.krng1, .tmbh1, .krng2, .tmbh2, .krng3, .tmbh3, .krng4, .tmbh4{
+    margin: 10px;
+    height: 30px;
+    padding: 0;
+    text-align: center;
+}
+
+.prf1, .prf2, .prf3, .prf4{
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+hr{
+    border-width: 10px;
+    border-color: black;
+}
+
+.psn{
+    display: flex;
+    justify-content: right;
+}
+
+.logout{
+    display: flex;
+    justify-content: center;
+}
