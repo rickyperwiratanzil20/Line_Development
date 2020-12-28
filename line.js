@@ -37,7 +37,7 @@ function inisialisasi(){
 }
 
 function login(){
-    if(liff.isLoggedIn()){
+    if(!liff.isLoggedIn()){
         liff.login();
     }
     else{
