@@ -53,7 +53,7 @@ function login(){
     }
 }
 
-function sendMessage(){
+function pesan(){
     if(liff.isInClient()){
         liff.sendMessages([
             {
