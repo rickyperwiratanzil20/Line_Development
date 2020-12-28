@@ -26,6 +26,14 @@ function inisialisasi(){
     }
 
     if(liff.isLoggedIn()){
+        $("#login").hide();
+        $(".main").show();
+        if(liff.isInClient()){
+            $(".tmbl-eks").show();
+        }
+        else{
+            $(".tmbl-eks").hide();
+        }
         liff.getProfile()
             .then(profile => {
                 $('#customer').text(profile.displayName);
